@@ -11,8 +11,6 @@
 
 ## 실습 내용 정리
 
----
-
 ### 회원가입 기능 구현
 
 우선 처음에 member DB 를 추가해주고 
@@ -34,7 +32,7 @@
 
 - 이제 적은 데이터를 서버에 보내기 위해 js를 이용해서 값을 받아 볼것이다.
 
-![json 서버 전송](./screenshots/register_json.PNG)
+![json 서버 전송](./screenshots/register_json.png)
 
 - `fetch()`를 사용해 로그인 정보를 **POST 방식**으로 서버에 전송하였다.
 - JSON 형식으로 데이터를 전달하며, `Content-Type: application/json` 헤더를 설정하였다.
