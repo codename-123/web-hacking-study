@@ -102,4 +102,4 @@
 
 ![log.txt 내용 확인 결과](./screenshots/view_log_txt_contents.png)
 
-- 정상적으로 잘 된다.
+정상적으로 잘 된다.
