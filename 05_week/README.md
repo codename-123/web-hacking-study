@@ -19,7 +19,7 @@
 - **URL을 직접 `step3.php`로 접근**하면 비밀번호를 입력하지 않아도 미사일이 발사된다.
 - 이 구조적 취약점을 이용해 **flag를 획득**할 수 있었다.
 
-![PIN CODE by pass FLAG](.screenshots/pin_code_by_pass.png)
+![PIN CODE by pass FLAG](./screenshots/pin_code_by_pass.png)
 
 --- 
 
@@ -27,11 +27,11 @@
 
 - 우선 문제에서 제공된 아이디와 비밀번호를 입력한 후 Burp Suite를 통해 서버의 응답을 확인해보았다.
 
-![정상적인 로그인](.screenshots/success_login.png)
+![정상적인 로그인](./screenshots/success_login.png)
 
 > 정상적인 로그인
 
-![틀린 로그인](.screenshots/fall_login.png)
+![틀린 로그인](./screenshots/fall_login.png)
 
 > 틀린 로그인
 
@@ -41,7 +41,7 @@
 - 이 구조를 이용해 **서버의 응답을 조작하면 로그인 우회가 가능한 문제**로 보인다.
 - **Intercept를 활성화한 뒤**, 서버의 응답을 `{"result":"ok"}`로 수정하면 로그인에 성공할 수 있다.
 
-![Admin is Mine FLAG](.screenshots/server_deceive.png)
+![Admin is Mine FLAG](./screenshots/server_deceive.png)
 
 - 이런 식으로 **flag를 획득**하였다.
 
@@ -53,27 +53,27 @@
 
 우선 그냥 아무 핀 번호로 시도를 하면
 
-![Pin Code Crack CTF](.screenshots/pin_code_crack_ctf.png)
+![Pin Code Crack CTF](./screenshots/pin_code_crack_ctf.png)
 
 - 요청이 **GET 방식**으로 전달되는 것을 확인할 수 있다.
 - PIN 번호가 틀릴 경우, 응답에는 `alert('Login Fail...');` 스크립트가 포함되어 있다.
 
 - 이를 통해 **응답 내용을 기준으로 Brute Force 공격이 가능**하다고 판단할 수 있다.
 
-![파이썬 브루트포스 스크립트](.screenshots/python_brute_porce.png)
+![파이썬 브루트포스 스크립트](./screenshots/python_brute_porce.png)
 
 - Python으로 자동화 Brute Force 스크립트를 작성하여 PIN 번호를 순차적으로 시도했다.
 - 작성한 스크립트 파일은 `brute_force.py`에 포함되어 있다.
 
 [brute_force.py](./brute_force.py)
 
-![브루트포스 성공](.screenshots/brute_force_success.png)
+![브루트포스 성공](./screenshots/brute_force_success.png)
 
 **핀 번호를 찾았다!**
 
 이걸 이용해 핀 번호를 치면
 
-![Pin Code Crack FLAG](.screenshots/pin_code_crack_flag.png)
+![Pin Code Crack FLAG](./screenshots/pin_code_crack_flag.png)
 
 - **flag를 획득**하였다.
 
@@ -91,7 +91,7 @@
  UserId=normaltic2' # &Password=dol1234&Submit=Login 
  ```
 
-![Login Bypass 2 Flag](.screenshots/login_bypass2_flag.png)
+![Login Bypass 2 Flag](./screenshots/login_bypass2_flag.png)
 
 - **flag를 획득**하였다.
 
@@ -115,7 +115,7 @@
  UserId=' union select 'normaltic3','dol1234' # &Password=dol1234&Submit=Login
  ```
 
-![Login Bypass 3 Flag](.screenshots/login_bypass3_flag.png)
+![Login Bypass 3 Flag](./screenshots/login_bypass3_flag.png)
 
 - **flag를 획득**하였다.
 
@@ -140,7 +140,7 @@ SQL 내장 해시 함수 `MD5()`, `SHA1()`, `SHA2()` 등을 적용해 테스트�
 
 - 최종적으로 다음 페이로드에서 **HTTP 302 리다이렉트**가 발생하며 로그인 우회에 성공, **flag를 획득**했다.
 
-![Login Bypass 4 Flag](.screenshots/login_bypass4_flag.png)
+![Login Bypass 4 Flag](./screenshots/login_bypass4_flag.png)
 
 ---
 
@@ -148,14 +148,14 @@ SQL 내장 해시 함수 `MD5()`, `SHA1()`, `SHA2()` 등을 적용해 테스트�
 
 - 이 문제는 Burp Suite를 통해 요청과 응답을 확인하며 분석하였다.
 
-![Login Bypass 5 Cookie](.screenshots/login_bypass5_cookie.png)
+![Login Bypass 5 Cookie](./creenshots/login_bypass5_cookie.png)
 
 - 요청 헤더에는 **`Cookie` 값**이 포함되어 있었고,
 - 응답 헤더에는 **`Set-Cookie` 값**이 전달되는 것을 확인할 수 있었다.
 
 - 이때 `session` 값을 제거하고, 대신 `loginUser=normaltic5`로 수정하여 요청을 전송해보았다.
 
-![Login Bypass 5 Flag](.screenshots/login_bypass5_flag.png)
+![Login Bypass 5 Flag](./screenshots/login_bypass5_flag.png)
 
 - 그 결과, 별도의 인증 절차 없이 **로그인에 성공하며 flag를 획득**할 수 있었다.
 
