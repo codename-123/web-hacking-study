@@ -441,9 +441,9 @@ ql%'+Or+'1%'='1
 ![파이썬 활용 테이블 추출 완료](./screenshots/python_table_success.png)
 
 - 확인된 테이블 이름
-   - 1. comments
-   - 2. flags
-   - 3. posts
+  - comments
+  - flags
+  - posts
 
 - 이제 `flags` 테이블의 컬럼을 확인하기 위해, `information_schema.columns`를 활용한 스크립트를 작성할 것이다.
 
@@ -454,10 +454,10 @@ ql%'+Or+'1%'='1
 ![파이썬 활용 컬럼 추출 완료](./screenshots/python_column_success.png)
 
 - 확인된 테이블 이름
-    1. comments
-    2. flags
-    3. description
-    4. created_at
+    - comments
+    - flags
+    - description
+    - created_at
 
 - 이제 마지막 단계로, `flags` 테이블의 컬럼에서 실제 데이터를 추출해보았다.
 
