@@ -441,9 +441,9 @@ ql%'+Or+'1%'='1
 ![파이썬 활용 테이블 추출 완료](./screenshots/python_table_success.png)
 
 - 확인된 테이블 이름
-    1. comments
-    2. flags
-    3. posts
+   - 1. comments
+   - 2. flags
+   - 3. posts
 
 - 이제 `flags` 테이블의 컬럼을 확인하기 위해, `information_schema.columns`를 활용한 스크립트를 작성할 것이다.
 
