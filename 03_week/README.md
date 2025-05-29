@@ -183,7 +183,7 @@ if (password_verify($password, $user['password'])) {
 
 #### JWT 구현
 
-- 이제 JWT 기반 로그인 인증 로직을 PHP 코드로 구현한다. PHP에서는 보통 `firebase/php-jwt` 라이브러리를 사용합니다.
+- 이제 JWT 기반 로그인 인증 로직을 PHP 코드로 구현한다. PHP에서는 보통 `firebase/php-jwt` 라이브러리를 사용함.
 
 1. 설치
 
