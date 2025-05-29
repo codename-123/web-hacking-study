@@ -469,7 +469,7 @@ ql%'+Or+'1%'='1
 
 > 이렇게 마지막 문제까지 모두 마무리 했다.
 
-- 사용한 파이썬 스크립트: [SQLi 자동화 스크립트 보기](./boolean_based.py)
+- 사용한 파이썬 스크립트: [boolean_based.py](./boolean_based.py)
 
 ---
 
