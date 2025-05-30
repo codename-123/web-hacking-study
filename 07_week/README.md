@@ -336,9 +336,9 @@ def dump_data(sql: str) -> str:
                 result += chr(ascii_code)
                 print(chr(ascii_code), end='')
                 break
-        else:
-            break
-return result
+            else:
+                break
+    return result
 
 
 print("DB: ")
