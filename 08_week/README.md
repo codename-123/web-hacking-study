@@ -283,11 +283,11 @@ views, (select if(ascii(substring((select flagData from flag_Table limit ?, 1), 
 
 - 이제 게시판에 접근하여, 게시물 관련 기능에서 SQL Injection이 가능한 지점을 탐색해보겠다.
 
-[게시판 접속](./screenshots/sqli_9.png)
+![게시판 접속](./screenshots/sqli_9.png)
 
 - 이제 Burp Suite를 활용해 SQL Injection 포인트를 직접 탐색해보겠다.
 
-[게시판 접속](./screenshots/sqli_9_burp.png)
+![게시판 접속](./screenshots/sqli_9_burp.png)
 
 분석 결과, `notice_read.php` 요청에서 `id` 파라미터를 조작하여 SQL Injection이 가능할 것으로 보인다.
 
