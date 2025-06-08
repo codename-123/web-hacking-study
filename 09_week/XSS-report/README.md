@@ -39,7 +39,7 @@
 ![XSS1_1](./screenshots/xss1.png)
 
 #### alert 팝업이 실제로 실행된 결과
-![XSS1_2](./images/xss1_2.png)
+![XSS1_2](./screenshots/xss1_2.png)
 
 ---
 
@@ -55,7 +55,7 @@
 ![XSS2_1](./screenshots/xss2.png)
 
 #### alert 팝업이 실제로 실행된 결과
-![XSS2_2](./screenshots/xss2_1.png)
+![XSS2_2](./screenshots/xss2_2.png)
 
 ---
 
