@@ -114,7 +114,7 @@
 #### Firefox에서 JavaScript를 비활성화한 설정
 ![XSS5_2](./screenshots/xss5_2.png)
 
-#### 게시글 작성 시 내용 필드에 XSS 페이로드가 삽입된 화면
+#### 비활성화 후 게시글 작성 시 내용 필드에 XSS 페이로드가 삽입된 화면
 ![XSS5_3](./screenshots/xss5_3.png)
 
 #### 저장된 페이로드가 실행되어 alert 팝업이 출력된 결과
