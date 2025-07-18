@@ -1,4 +1,4 @@
-# 웹해킹 스터디 8주차 과제: SQL Injection Point
+# 웹해킹 스터디 8주차: SQL Injection Point
 
 
 ## 개요
