@@ -1,4 +1,4 @@
-# 웹 해킹 스터디 10주차 과제: Stored XSS && Reflected XSS
+# 웹 해킹 스터디 10주차: Stored XSS && Reflected XSS
 
 ## 개요
 
