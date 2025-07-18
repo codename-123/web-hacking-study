@@ -1,4 +1,4 @@
-# 웹해킹 스터디 6주차 과제: UNION SELECT & Blind SQL Injection
+# 웹해킹 스터디 6주차: UNION SELECT & Blind SQL Injection
 
 ## 개요
 
