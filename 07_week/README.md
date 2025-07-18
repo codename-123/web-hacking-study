@@ -1,4 +1,4 @@
-# 웹해킹 스터디 7주차 과제: Blind SQL Injection & Error Based SQL Injection
+# 웹해킹 스터디 7주차: Blind SQL Injection & Error Based SQL Injection
 
 ## 개요
 
