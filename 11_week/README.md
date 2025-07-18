@@ -1,4 +1,4 @@
-# 웹 해킹 스터디 11주차 과제: Stored XSS 기반 Same-Origin DOM 데이터 탈취
+# 웹 해킹 스터디 11주차: Stored XSS 기반 Same-Origin DOM 데이터 탈취
 
 ## 개요
 
