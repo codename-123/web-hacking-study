@@ -6,7 +6,7 @@ $content = (isset($_POST['content']) && $_POST['content'] != '') ? htmlspecialch
 $idx = (isset($_POST['idx']) && $_POST['idx'] != '') ? $_POST['idx'] : null;
 $file = (isset($_FILES['file_upload']) && $_FILES['file_upload'] != '') ? $_FILES['file_upload'] : null;
 
-if ($file && $file['error'] === 0) {
+if ($file && $file['error'] == 0) {
     $allowed_ext = ['jpg', 'jpeg', 'png', 'gif'];
     $ext = strtolower(pathinfo($_FILES['file_upload']['name'], PATHINFO_EXTENSION));
 
